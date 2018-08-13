@@ -1,0 +1,184 @@
+Started by timer
+Building in workspace /opt/ci/workspace/APIGWGitBuildAndDeploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/prudhvipenmetsa/apigwmath2demo.git # timeout=10
+Fetching upstream changes from https://github.com/prudhvipenmetsa/apigwmath2demo.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/prudhvipenmetsa/apigwmath2demo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 92ed2fd0e4d3505f822698d9bcd20a561996efce (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 92ed2fd0e4d3505f822698d9bcd20a561996efce
+Commit message: "11:08"
+ > git rev-list --no-walk 92ed2fd0e4d3505f822698d9bcd20a561996efce # timeout=10
+[apigw_fromrepo] $ /opt/api102/common/lib/ant/bin/ant -file build.xml -Dapigateway.repo.localRepo.path=/opt/ci/workspace/APIGWGitBuildAndDeploy -Dapigateway.is.username=Administrator -Dapigateway.is.password=manage -Dapigateway.is.url=http://webm101.prudhvi.com:9955 -Dbuild.output.dir=/opt/ci/workspace/APIGWFFRepo3
+Buildfile: /opt/api102/common/AssetBuildEnvironment/apigw_fromrepo/build.xml
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcheck-build.prop-loc:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minitLog:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+     [echo] Apache Ant(TM) version 1.10.1 compiled on February 2 2017
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateNewBuildNumber:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateBuildNumber:
+[propertyfile] Updating property file: /opt/api102/common/AssetBuildEnvironment/apigw_fromrepo/build.number
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateOutputDir:
+     [echo] The directory /opt/ci/workspace/APIGWFFRepo3 already exists.
+     [echo] Started APIGateway Build.............
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuildAPIGateway:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mvalidateParameters:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateRepository:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateRepoFromSource:
+    [mkdir] Created dir: /opt/api102/common/AssetBuildEnvironment/APIGateway/temp
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mdownloadFromSourceAPIGateway:
+     [java] Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=128M; support was removed in 8.0
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateRepoFromLocalRepo:
+     [echo] Creating Repo from Local file system at /opt/ci/workspace/APIGWGitBuildAndDeploy
+   [delete] Deleting directory /opt/ci/workspace/APIGWFFRepo3/APIGateway
+    [mkdir] Created dir: /opt/ci/workspace/APIGWFFRepo3/APIGateway
+      [zip] Building zip: /opt/ci/workspace/APIGWFFRepo3/APIGateway/APIGatewayAssets.zip
+     [copy] Copying 1 file to /opt/ci/workspace/APIGWFFRepo3/APIGateway
+   [delete] Deleting directory /opt/api102/common/AssetBuildEnvironment/APIGateway/temp
+     [echo] APIGateway Build complete...............
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcheck-build.prop-loc:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateIndex:
+[createIndex] RepoIndexer is processing composite Assets for API Gateway from composite file /opt/ci/workspace/APIGWFFRepo3/APIGateway/APIGatewayAssets.acdl
+
+[8mha:////4AhgD9qzO+GVBzK268fOKNBPEI0C+34QDJth1BkDbNFjAAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 5 seconds
+[APIGWGitBuildAndDeploy] $ /bin/sh -xe /tmp/jenkins1331177958158484627.sh
++ /opt/api102/IntegrationServer/instances/default/packages/WmDeployer/bin/Deployer.sh --deploy -dc QADeployment -project Math2DemoToQA -host webm101.prudhvi.com -port 9955 -user Administrator -pwd manage
+[ INFO] [04 Jul 2018 23:26:57,881] (MainClass.java:initializeLogger:74)
+Logging initialized.
+
+[DEBUG] [04 Jul 2018 23:26:57,912] (ParseDeployerParams.java:parse:74)
+[Deployer] Entering parse(String[] args) Method
+
+[ INFO] [04 Jul 2018 23:26:57,923] (ParseDeployerParams.java:parse:1951)
+[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
+
+[DEBUG] [04 Jul 2018 23:26:57,927] (ParseDeployerParams.java:validateCommandLineParametersForAction:2575)
+[Deployer] Entering validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
+
+[DEBUG] [04 Jul 2018 23:26:57,928] (ParseDeployerParams.java:validateCommandLineParametersForAction:2865)
+[Deployer] [Param Authentication] 
+
+[DEBUG] [04 Jul 2018 23:26:57,928] (ParseDeployerParams.java:validateCommandLineParametersForAction:2868)
+[Deployer] [Config File Parameters]isUserSpecifiedinConfigFile = false
+
+[DEBUG] [04 Jul 2018 23:26:57,929] (ParseDeployerParams.java:validateCommandLineParametersForAction:2871)
+[Deployer] [Config File Parameters]isPasswordSpecifiedinConfigFile = false
+
+[DEBUG] [04 Jul 2018 23:26:57,934] (ParseDeployerParams.java:validateCommandLineParametersForAction:2873)
+[Deployer] Operation invoked by User Administrator on Deployer webm101.prudhvi.com:9955
+
+[DEBUG] [04 Jul 2018 23:26:57,935] (ParseDeployerParams.java:printParamMap:5162)
+[Deployer][ParamMap] Key = port Value = 9955
+
+[DEBUG] [04 Jul 2018 23:26:57,936] (ParseDeployerParams.java:printParamMap:5162)
+[Deployer][ParamMap] Key = host Value = webm101.prudhvi.com
+
+[DEBUG] [04 Jul 2018 23:26:57,936] (ParseDeployerParams.java:printParamMap:5162)
+[Deployer][ParamMap] Key = action Value = deploy
+
+[DEBUG] [04 Jul 2018 23:26:57,936] (ParseDeployerParams.java:printParamMap:5159)
+[Deployer][ParamMap] Key = pwd.Value present but not shown.
+
+[DEBUG] [04 Jul 2018 23:26:57,936] (ParseDeployerParams.java:printParamMap:5162)
+[Deployer][ParamMap] Key = user Value = Administrator
+
+[ INFO] [04 Jul 2018 23:26:57,937] (ParseDeployerParams.java:validateCommandLineParametersForAction:4019)
+[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
+
+[DEBUG] [04 Jul 2018 23:26:57,937] (ParseDeployerParams.java:validateCommandLineParametersForAction:5129)
+[Deployer] Exiting validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
+
+[DEBUG] [04 Jul 2018 23:26:57,952] (DeployerServiceUtils.java:deployAction:657)
+[Deployer] Entering deployAction(HashMap paramMap) Method
+
+[DEBUG] [04 Jul 2018 23:26:57,956] (DeployerServiceUtils.java:deployAction:660)
+[Deployer] Invoking Service wm.deployer.UIDeployer.deployToTargets on Deployer webm101.prudhvi.com:9955
+
+[DEBUG] [04 Jul 2018 23:26:57,957] (DeployerServiceUtils.java:deployAction:666)
+[Deployer] Service invoked by User Administrator
+
+[DEBUG] [04 Jul 2018 23:26:57,957] (DeployerServiceUtils.java:deployAction:668)
+[Deployer] Parameters to the service 
+
+[DEBUG] [04 Jul 2018 23:26:57,966] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	project = Math2DemoToQA
+
+[DEBUG] [04 Jul 2018 23:26:57,967] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	deploymentName = QADeployment
+
+[DEBUG] [04 Jul 2018 23:26:57,967] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	preDeployString = false
+
+[DEBUG] [04 Jul 2018 23:26:57,967] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	force = false
+
+[DEBUG] [04 Jul 2018 23:26:57,968] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	reportFilePath = null
+
+[DEBUG] [04 Jul 2018 23:26:57,968] (DeployerServiceUtils.java:executeService:1484)
+[Deployer] Entering executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
+
+[DEBUG] [04 Jul 2018 23:26:58,533] (DeployerServiceUtils.java:executeService:1535)
+[Deployer] Initiating connection Secure Socket Layer = false
+
+[DEBUG] [04 Jul 2018 23:26:58,621] (DeployerServiceUtils.java:executeService:1537)
+[Deployer] Connection Established Secure Socket Layer = false
+
+[DEBUG] [04 Jul 2018 23:26:58,622] (DeployerServiceUtils.java:executeService:1539)
+[Deployer] Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
+
+[DEBUG] [04 Jul 2018 23:27:01,606] (DeployerServiceUtils.java:executeService:1541)
+[Deployer] Completed Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
+
+[DEBUG] [04 Jul 2018 23:27:01,625] (DeployerServiceUtils.java:executeService:1577)
+[Deployer] Exiting executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
+
+[DEBUG] [04 Jul 2018 23:27:01,625] (DeployerServiceUtils.java:deployAction:701)
+[Deployer Service Status] Stature returned with status success
+
+[DEBUG] [04 Jul 2018 23:27:01,626] (DeployerServiceUtils.java:deployAction:714)
+[Deployer Service Status] Message = [DEP.0005.0201] Deployment succeeded
+
+[DEBUG] [04 Jul 2018 23:27:01,626] (DeployerServiceUtils.java:deployAction:726)
+[Deployer] Exiting deployAction(HashMap paramMap) Method
+
+[DEBUG] [04 Jul 2018 23:27:01,626] (ParseDeployerParams.java:addStatusRecordToReport:5136)
+[Deployer] Entering addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
+
+[DEBUG] [04 Jul 2018 23:27:01,627] (ParseDeployerParams.java:addStatusRecordToReport:5147)
+[Deployer] Exiting addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
+
+[ INFO] [04 Jul 2018 23:27:01,628] (ParseDeployerParams.java:parse:1967)
+[[DEP.0100.4.00] Success0] [DEP.0005.0201] Deployment succeeded
+
+[[DEP.0100.5.23] Deploy Deployment Candidate Output]
+
+[[DEP.0100.4.00] Success - 0]	:	[[DEP.0100.5.23] Deploy Deployment Candidate]	:	[DEP.0005.0201] Deployment succeeded
+[DEP.0100.3.39] Report file name       :/opt/api102/IntegrationServer/instances/
+                                        default/packages/WmDeployer/pub/projects
+                                        /Math2DemoToQA/targets/QADeploymentMap/r
+                                        eports/QADeploymentMap_auditReport_15307
+                                        61218772.xml
+Finished: SUCCESS

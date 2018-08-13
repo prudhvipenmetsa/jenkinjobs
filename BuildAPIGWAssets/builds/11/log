@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+Building in workspace /opt/ci/workspace/BuildAPIGWAssets
+[BuildAPIGWAssets] $ /bin/sh -xe /tmp/jenkins3510443848131480371.sh
++ /opt/api102/common/AssetBuildEnvironment/apigw_build/build.sh
+/opt/api102/common/AssetBuildEnvironment/apigw_build/build.sh: line 25: /opt/api102/common/AssetBuildEnvironment/../lib/ant/bin/ant: Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

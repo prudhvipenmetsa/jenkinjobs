@@ -1,0 +1,69 @@
+Started by user [8mha:////4JNxZz+AQkj8Gb19MbEiRNIslxFEQUpH+E5ZMCGTOtM1AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgY+/dLi1CL9goLUvNzUkmIAdblWAcMAAAA=[0mPrudhvi Penmetsa
+Building in workspace /opt/ci/workspace/APIGWFFBUILD
+Cloning the remote Git repository
+Cloning repository https://github.com/prudhvipenmetsa/apigw.git
+ > git init /opt/api102/aberepo/APIGWFF # timeout=10
+Fetching upstream changes from https://github.com/prudhvipenmetsa/apigw.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/prudhvipenmetsa/apigw.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/prudhvipenmetsa/apigw.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/prudhvipenmetsa/apigw.git # timeout=10
+Fetching upstream changes from https://github.com/prudhvipenmetsa/apigw.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/prudhvipenmetsa/apigw.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision b37d94413138a38096471bc8dc4bf5bbfcad9a2e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b37d94413138a38096471bc8dc4bf5bbfcad9a2e
+Commit message: "Initial commit"
+First time build. Skipping changelog.
+[apigw_ff_build] $ /opt/api102/common/lib/ant/bin/ant -file build.xml
+Buildfile: /opt/api102/common/AssetBuildEnvironment/apigw_ff_build/build.xml
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcheck-build.prop-loc:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minitLog:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+     [echo] Apache Ant(TM) version 1.10.1 compiled on February 2 2017
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateNewBuildNumber:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateBuildNumber:
+[propertyfile] Updating property file: /opt/api102/common/AssetBuildEnvironment/apigw_ff_build/build.number
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateOutputDir:
+     [echo] The directory /opt/api102/aberepo/APIGWFF already exists.
+     [echo] Started APIGateway Build.............
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuildAPIGateway:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mvalidateParameters:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateLocalRepository:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mdownloadFromSourceAPIGateway:
+     [java] Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=128M; support was removed in 8.0
+     [java] Invalid Logging level:on.No messages will be logged.
+     [java] Invalid Logging level:on.No messages will be logged.
+     [java] log4j:WARN No appenders could be found for logger (com.softwareag.apigateway.deployer.abe.ArchiveServiceCaller).
+     [java] log4j:WARN Please initialize the log4j system properly.
+     [java] log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+     [java] Invalid Logging level:on.No messages will be logged.
+     [java] Invalid Logging level:on.No messages will be logged.
+     [echo] APIGateway Build complete...............
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcheck-build.prop-loc:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateIndex:
+[createIndex] RepoIndexer is processing composite Assets for API Gateway from composite file /opt/api102/aberepo/APIGWFF/APIGatewayAssets.acdl
+
+[8mha:////4AhgD9qzO+GVBzK268fOKNBPEI0C+34QDJth1BkDbNFjAAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 36 seconds
+ERROR: Step ‘Git Publisher’ failed: No repository found for target repo name apigw
+Finished: FAILURE

@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.gitbucket.GitBucketProjectProperty plugin="gitbucket@0.8">
+      <linkEnabled>false</linkEnabled>
+    </org.jenkinsci.plugins.gitbucket.GitBucketProjectProperty>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.2">
+      <projectUrl>https://github.com/prudhvipenmetsa/apigw.git/</projectUrl>
+      <displayName>github</displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Ant plugin="ant@1.8">
+      <targets></targets>
+      <antName>ANT1.8.2</antName>
+      <buildFile>/opt/api102/common/AssetBuildEnvironment/apigw_ff_build/build.xml</buildFile>
+      <properties>build.output.dir=$WORKSPACE
+apigateway.buildLocalRepoOnly=true</properties>
+    </hudson.tasks.Ant>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

@@ -1,0 +1,32 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>This project will build a binary repository by running &#xd;
+&#xd;
+/opt/api102/common/AssetBuildEnvironment/apigw_build/build.sh</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.gitbucket.GitBucketProjectProperty plugin="gitbucket@0.8">
+      <linkEnabled>false</linkEnabled>
+    </org.jenkinsci.plugins.gitbucket.GitBucketProjectProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>/opt/api102/common/AssetBuildEnvironment/apigw_build/build.sh</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <hudson.tasks.AntWrapper plugin="ant@1.8">
+      <installation>ANT1.8.2</installation>
+      <jdk>JDK_1_8</jdk>
+    </hudson.tasks.AntWrapper>
+  </buildWrappers>
+</project>

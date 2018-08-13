@@ -1,0 +1,66 @@
+Started by user unknown or anonymous
+Building in workspace /opt/ci/workspace/BuildAndDeployAPIGW
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/prudhvipenmetsa/apigw.git # timeout=10
+Fetching upstream changes from https://github.com/prudhvipenmetsa/apigw.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/prudhvipenmetsa/apigw.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3261b5bfdff52d3fb1f5cc31251500a7cbf9f93b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3261b5bfdff52d3fb1f5cc31251500a7cbf9f93b
+Commit message: "Merge branch 'master' of https://github.com/prudhvipenmetsa/apigw"
+ > git rev-list --no-walk 3261b5bfdff52d3fb1f5cc31251500a7cbf9f93b # timeout=10
+[apigw_fromrepo] $ /opt/api102/common/lib/ant/bin/ant -file build.xml -Dapigateway.repo.localRepo.path=/opt/ci/workspace/BuildAndDeployAPIGW -Dapigateway.is.username=Administrator -Dapigateway.is.password=manage -Dapigateway.is.url=http://webm101.prudhvi.com:5555 -Dbuild.output.dir=/opt/ci/workspace/APIGWFFRepo
+Buildfile: /opt/api102/common/AssetBuildEnvironment/apigw_fromrepo/build.xml
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcheck-build.prop-loc:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minitLog:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+     [echo] Apache Ant(TM) version 1.10.1 compiled on February 2 2017
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateNewBuildNumber:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateBuildNumber:
+[propertyfile] Updating property file: /opt/api102/common/AssetBuildEnvironment/apigw_fromrepo/build.number
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateOutputDir:
+     [echo] The directory /opt/ci/workspace/APIGWFFRepo already exists.
+     [echo] Started APIGateway Build.............
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuildAPIGateway:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mvalidateParameters:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateRepository:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateRepoFromSource:
+    [mkdir] Created dir: /opt/api102/common/AssetBuildEnvironment/APIGateway/temp
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mdownloadFromSourceAPIGateway:
+     [java] Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=128M; support was removed in 8.0
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateRepoFromLocalRepo:
+     [echo] Creating Repo from Local file system at /opt/ci/workspace/BuildAndDeployAPIGW
+   [delete] Deleting directory /opt/ci/workspace/APIGWFFRepo/APIGateway
+    [mkdir] Created dir: /opt/ci/workspace/APIGWFFRepo/APIGateway
+      [zip] Building zip: /opt/ci/workspace/APIGWFFRepo/APIGateway/APIGatewayAssets.zip
+     [copy] Copying 1 file to /opt/ci/workspace/APIGWFFRepo/APIGateway
+   [delete] Deleting directory /opt/api102/common/AssetBuildEnvironment/APIGateway/temp
+     [echo] APIGateway Build complete...............
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcheck-build.prop-loc:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateIndex:
+[createIndex] RepoIndexer is processing composite Assets for API Gateway from composite file /opt/ci/workspace/APIGWFFRepo/APIGateway/APIGatewayAssets.acdl
+
+[8mha:////4AhgD9qzO+GVBzK268fOKNBPEI0C+34QDJth1BkDbNFjAAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 4 seconds
+Finished: SUCCESS

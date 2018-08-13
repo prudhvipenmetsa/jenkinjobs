@@ -1,0 +1,55 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.gitbucket.GitBucketProjectProperty plugin="gitbucket@0.8">
+      <linkEnabled>false</linkEnabled>
+    </org.jenkinsci.plugins.gitbucket.GitBucketProjectProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/prudhvipenmetsa/WmPackages.git</url>
+        <credentialsId>694bb9ba-9338-4458-8dd8-5f562d8213f2</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Ant plugin="ant@1.8">
+      <targets></targets>
+      <antName>ANT1.8.2</antName>
+      <buildFile>/opt/api102/common/AssetBuildEnvironment/is_build/build.xml</buildFile>
+      <properties>build.source.dir=$workspace
+build.output.dir=/opt/ci/workspace/builds/isbuild</properties>
+    </hudson.tasks.Ant>
+    <hudson.tasks.Shell>
+      <command>/opt/api102/IntegrationServer/instances/default/packages/WmDeployer/bin/Deployer.sh --deploy -dc TSTDeployment -project JenkinsISDeploy  -host webm101.prudhvi.com  -port 9955 -user Administrator  -pwd manage
+</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Ant plugin="ant@1.8">
+      <targets>test.packages</targets>
+      <antName>ANT1.8.2</antName>
+      <buildFile>/opt/api102/common/AssetBuildEnvironment/is_build/wmtestsuite.xml</buildFile>
+      <properties>workspace=$workspace</properties>
+    </hudson.tasks.Ant>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

@@ -1,0 +1,71 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<flow-build plugin="workflow-job@2.23">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>614</queueId>
+  <timestamp>1533091920068</timestamp>
+  <startTime>1533091920083</startTime>
+  <result>FAILURE</result>
+  <duration>814</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+   echo &apos;Hello World&apos;
+   checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: &apos;694bb9ba-9338-4458-8dd8-5f562d8213f2&apos;, url: &apos;https://github.com/prudhvipenmetsa/WmPackages.git&apos;]]])
+        ant {
+            //target(&apos;test&apos;)
+            //targets([&apos;publish&apos;, &apos;deploy&apos;])
+            prop(&apos;logging&apos;, &apos;info&apos;)
+            props(&apos;test.threads&apos;: 10, &apos;input.status&apos;: &apos;release&apos;)
+            buildFile(&apos;/opt/api102/common/AssetBuildEnvironment/is_build/build.xml&apos;)
+            javaOpt(&apos;-Xmx1g&apos;)
+            //javaOpts([&apos;-Dprop2=value2&apos;, &apos;-Dprop3=value3&apos;])
+            antInstallation(&apos;ANT1.8.2&apos;)
+        }
+
+    
+}
+
+
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>PERFORMANCE_OPTIMIZED</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>17106224</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>688380898</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>161169422</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>439285605</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>9</iota>
+    <head>1:9</head>
+    <done>true</done>
+    <resumeBlocked>true</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

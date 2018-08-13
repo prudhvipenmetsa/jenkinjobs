@@ -1,0 +1,229 @@
+Started by user unknown or anonymous
+Building in workspace /opt/ci/workspace/ISBuild_And_Deploy_Good
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/prudhvipenmetsa/WmPackages.git # timeout=10
+Fetching upstream changes from https://github.com/prudhvipenmetsa/WmPackages.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/prudhvipenmetsa/WmPackages.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3adc0225fbba493aeca9eb7fb4415e8ccdf125c6 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3adc0225fbba493aeca9eb7fb4415e8ccdf125c6
+Commit message: "JDBC Adapter addded"
+ > git rev-list --no-walk 3adc0225fbba493aeca9eb7fb4415e8ccdf125c6 # timeout=10
+[is_build] $ /opt/api102/common/lib/ant/bin/ant -file build.xml -Dbuild.source.dir=/opt/ci/workspace/ISBuild_And_Deploy_Good -Dbuild.output.dir=/opt/ci/workspace/builds/isbuild
+Buildfile: /opt/api102/common/AssetBuildEnvironment/is_build/build.xml
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcheck-build.prop-loc:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minitLog:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+     [echo] Apache Ant(TM) version 1.10.1 compiled on February 2 2017
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateNewBuildNumber:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateBuildNumber:
+[propertyfile] Updating property file: /opt/api102/common/AssetBuildEnvironment/is_build/build.number
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateOutputDir:
+     [echo] The directory /opt/ci/workspace/builds/isbuild already exists.
+     [echo] Started Integration Server Build.............
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuildIS:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mvalidate:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0miterate_multi_project_folders:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild_projects:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mgenerate-composites:
+     [java] [8/13/18 12:06 AM][MESSAGE] ispackage.ispackage: Starting to read packages .git,APIGatwayDemo,replicate,logs. 
+     [java] [8/13/18 12:06 AM][MESSAGE] ispackage.ispackage: Starting to read package [.git]. 
+     [java] [8/13/18 12:06 AM][MESSAGE] ispackage.ispackage: [.git] is not an Integration Server package. 
+     [java] [8/13/18 12:06 AM][MESSAGE] ispackage.ispackage: Starting to read package [APIGatwayDemo]. 
+     [java] [8/13/18 12:06 AM][WARNING] ispackage.APIGatwayDemo: Configuration data is missing. Cannot export ACL information for package APIGatwayDemo 
+     [java] [8/13/18 12:06 AM][WARNING] artconnection.APIGatewayDemo.jdbc.conn:WM102Conn: Passman store not initialized or unknown handle: password.APIGatewayDemo.jdbc.conn:WM102Conn 
+     [java] [8/13/18 12:06 AM][MESSAGE] ispackage.ispackage: Completed creation of ACDL and binary for a package [APIGatwayDemo]. 
+     [java] [8/13/18 12:06 AM][MESSAGE] ispackage.ispackage: Starting to read package [replicate]. 
+     [java] [8/13/18 12:06 AM][MESSAGE] ispackage.ispackage: [replicate] is not an Integration Server package. 
+     [java] [8/13/18 12:06 AM][MESSAGE] ispackage.ispackage: Starting to read package [logs]. 
+     [java] [8/13/18 12:06 AM][MESSAGE] ispackage.ispackage: [logs] is not an Integration Server package. 
+     [java] [8/13/18 12:06 AM][MESSAGE] ispackage.ispackage: Completed all packages. 
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0miterate_single_project_folders:
+     [echo] Integration Server Build complete...........
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcheck-build.prop-loc:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateIndex:
+[createIndex] RepoIndexer is processing composite APIGatwayDemo from composite file /opt/ci/workspace/builds/isbuild/IS/APIGatwayDemo.acdl
+
+[8mha:////4AhgD9qzO+GVBzK268fOKNBPEI0C+34QDJth1BkDbNFjAAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 2 seconds
+[ISBuild_And_Deploy_Good] $ /bin/sh -xe /tmp/jenkins2509232118306793490.sh
++ /opt/api102/IntegrationServer/instances/default/packages/WmDeployer/bin/Deployer.sh --deploy -dc TSTDeployment -project JenkinsISDeploy -host webm101.prudhvi.com -port 9955 -user Administrator -pwd manage
+[ INFO] [13 Aug 2018 00:06:36,167] (MainClass.java:initializeLogger:74)
+Logging initialized.
+
+[DEBUG] [13 Aug 2018 00:06:36,190] (ParseDeployerParams.java:parse:74)
+[Deployer] Entering parse(String[] args) Method
+
+[ INFO] [13 Aug 2018 00:06:36,197] (ParseDeployerParams.java:parse:1951)
+[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
+
+[DEBUG] [13 Aug 2018 00:06:36,199] (ParseDeployerParams.java:validateCommandLineParametersForAction:2575)
+[Deployer] Entering validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
+
+[DEBUG] [13 Aug 2018 00:06:36,200] (ParseDeployerParams.java:validateCommandLineParametersForAction:2865)
+[Deployer] [Param Authentication] 
+
+[DEBUG] [13 Aug 2018 00:06:36,200] (ParseDeployerParams.java:validateCommandLineParametersForAction:2868)
+[Deployer] [Config File Parameters]isUserSpecifiedinConfigFile = false
+
+[DEBUG] [13 Aug 2018 00:06:36,200] (ParseDeployerParams.java:validateCommandLineParametersForAction:2871)
+[Deployer] [Config File Parameters]isPasswordSpecifiedinConfigFile = false
+
+[DEBUG] [13 Aug 2018 00:06:36,204] (ParseDeployerParams.java:validateCommandLineParametersForAction:2873)
+[Deployer] Operation invoked by User Administrator on Deployer webm101.prudhvi.com:9955
+
+[DEBUG] [13 Aug 2018 00:06:36,205] (ParseDeployerParams.java:printParamMap:5162)
+[Deployer][ParamMap] Key = port Value = 9955
+
+[DEBUG] [13 Aug 2018 00:06:36,205] (ParseDeployerParams.java:printParamMap:5162)
+[Deployer][ParamMap] Key = host Value = webm101.prudhvi.com
+
+[DEBUG] [13 Aug 2018 00:06:36,206] (ParseDeployerParams.java:printParamMap:5162)
+[Deployer][ParamMap] Key = action Value = deploy
+
+[DEBUG] [13 Aug 2018 00:06:36,206] (ParseDeployerParams.java:printParamMap:5159)
+[Deployer][ParamMap] Key = pwd.Value present but not shown.
+
+[DEBUG] [13 Aug 2018 00:06:36,206] (ParseDeployerParams.java:printParamMap:5162)
+[Deployer][ParamMap] Key = user Value = Administrator
+
+[ INFO] [13 Aug 2018 00:06:36,207] (ParseDeployerParams.java:validateCommandLineParametersForAction:4019)
+[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
+
+[DEBUG] [13 Aug 2018 00:06:36,207] (ParseDeployerParams.java:validateCommandLineParametersForAction:5129)
+[Deployer] Exiting validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
+
+[DEBUG] [13 Aug 2018 00:06:36,213] (DeployerServiceUtils.java:deployAction:657)
+[Deployer] Entering deployAction(HashMap paramMap) Method
+
+[DEBUG] [13 Aug 2018 00:06:36,215] (DeployerServiceUtils.java:deployAction:660)
+[Deployer] Invoking Service wm.deployer.UIDeployer.deployToTargets on Deployer webm101.prudhvi.com:9955
+
+[DEBUG] [13 Aug 2018 00:06:36,215] (DeployerServiceUtils.java:deployAction:666)
+[Deployer] Service invoked by User Administrator
+
+[DEBUG] [13 Aug 2018 00:06:36,216] (DeployerServiceUtils.java:deployAction:668)
+[Deployer] Parameters to the service 
+
+[DEBUG] [13 Aug 2018 00:06:36,227] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	project = JenkinsISDeploy
+
+[DEBUG] [13 Aug 2018 00:06:36,228] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	deploymentName = TSTDeployment
+
+[DEBUG] [13 Aug 2018 00:06:36,229] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	preDeployString = false
+
+[DEBUG] [13 Aug 2018 00:06:36,229] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	force = false
+
+[DEBUG] [13 Aug 2018 00:06:36,230] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	reportFilePath = null
+
+[DEBUG] [13 Aug 2018 00:06:36,230] (DeployerServiceUtils.java:executeService:1484)
+[Deployer] Entering executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
+
+[DEBUG] [13 Aug 2018 00:06:36,640] (DeployerServiceUtils.java:executeService:1535)
+[Deployer] Initiating connection Secure Socket Layer = false
+
+[DEBUG] [13 Aug 2018 00:06:36,723] (DeployerServiceUtils.java:executeService:1537)
+[Deployer] Connection Established Secure Socket Layer = false
+
+[DEBUG] [13 Aug 2018 00:06:36,724] (DeployerServiceUtils.java:executeService:1539)
+[Deployer] Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
+
+[DEBUG] [13 Aug 2018 00:06:51,913] (DeployerServiceUtils.java:executeService:1541)
+[Deployer] Completed Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
+
+[DEBUG] [13 Aug 2018 00:06:51,919] (DeployerServiceUtils.java:executeService:1577)
+[Deployer] Exiting executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
+
+[DEBUG] [13 Aug 2018 00:06:51,919] (DeployerServiceUtils.java:deployAction:701)
+[Deployer Service Status] Stature returned with status success
+
+[DEBUG] [13 Aug 2018 00:06:51,919] (DeployerServiceUtils.java:deployAction:714)
+[Deployer Service Status] Message = [DEP.0005.0201] Deployment succeeded
+
+[DEBUG] [13 Aug 2018 00:06:51,920] (DeployerServiceUtils.java:deployAction:726)
+[Deployer] Exiting deployAction(HashMap paramMap) Method
+
+[DEBUG] [13 Aug 2018 00:06:51,920] (ParseDeployerParams.java:addStatusRecordToReport:5136)
+[Deployer] Entering addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
+
+[DEBUG] [13 Aug 2018 00:06:51,921] (ParseDeployerParams.java:addStatusRecordToReport:5147)
+[Deployer] Exiting addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
+
+[ INFO] [13 Aug 2018 00:06:51,921] (ParseDeployerParams.java:parse:1967)
+[[DEP.0100.4.00] Success0] [DEP.0005.0201] Deployment succeeded
+
+[[DEP.0100.5.23] Deploy Deployment Candidate Output]
+
+[[DEP.0100.4.00] Success - 0]	:	[[DEP.0100.5.23] Deploy Deployment Candidate]	:	[DEP.0005.0201] Deployment succeeded
+[DEP.0100.3.39] Report file name       :/opt/api102/IntegrationServer/instances/
+                                        default/packages/WmDeployer/pub/projects
+                                        /JenkinsISDeploy/targets/TSTDeploymentMa
+                                        p/reports/TSTDeploymentMap_auditReport_1
+                                        534133196955.xml
+[is_build] $ /opt/api102/common/lib/ant/bin/ant -file wmtestsuite.xml -Dworkspace=/opt/ci/workspace/ISBuild_And_Deploy_Good test.packages
+Buildfile: /opt/api102/common/AssetBuildEnvironment/is_build/wmtestsuite.xml
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mtest.packages:
+     [echo] Started Testing
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpackage.dirs:
+     [echo] Testing package /opt/ci/workspace/ISBuild_And_Deploy_Good/APIGatwayDemo
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mfind.scripts:
+     [echo] Testing package /opt/ci/workspace/ISBuild_And_Deploy_Good/APIGatwayDemo/resources/test/setup
+     [echo]  Prudhvi /opt/ci/workspace/ISBuild_And_Deploy_Good/APIGatwayDemo/resources/test/setup/APIGatewayDemo.restsvc__deleteOrder_APIGatewayDemo.restsvc_deleteOrder_wmTestSuite.xml  APIGatewayDemo.restsvc__deleteOrder_APIGatewayDemo.restsvc_deleteOrder_wmTestSuite
+    [junit] Running com.wm.ps.test.WmTestSuite
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec
+    [junit] Exception in thread "main" Unable to write log file
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter.endTestSuite(XMLJUnitResultFormatter.java:199)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.fireEndTestSuite(JUnitTestRunner.java:844)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:578)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    [junit] Caused by: java.io.FileNotFoundException: /opt/ci/workspace/testreports/TEST-APIGatewayDemo.restsvc__deleteOrder_APIGatewayDemo.restsvc_deleteOrder_wmTestSuite.xml (Permission denied)
+    [junit] 	at java.io.FileOutputStream.open0(Native Method)
+    [junit] 	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+    [junit] 	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+    [junit] 	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.FormatterElement$DelayedFileOutputStream.write(FormatterElement.java:381)
+    [junit] 	at java.io.OutputStream.write(OutputStream.java:116)
+    [junit] 	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+    [junit] 	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)
+    [junit] 	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:295)
+    [junit] 	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+    [junit] 	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+    [junit] 	at java.io.BufferedWriter.flush(BufferedWriter.java:254)
+    [junit] 	at org.apache.tools.ant.util.DOMElementWriter.openElement(DOMElementWriter.java:372)
+    [junit] 	at org.apache.tools.ant.util.DOMElementWriter.write(DOMElementWriter.java:210)
+    [junit] 	at org.apache.tools.ant.util.DOMElementWriter.write(DOMElementWriter.java:223)
+    [junit] 	at org.apache.tools.ant.util.DOMElementWriter.write(DOMElementWriter.java:223)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter.endTestSuite(XMLJUnitResultFormatter.java:197)
+    [junit] 	... 4 more
+Build was aborted
+Aborted by [8mha:////4HFFJjEmBUqElWtPJRW/U5y2oNhz7RhYjFAadl5G0DkmAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL90rzsvPzyPAATbMabwgAAAA==[0munknown
+Finished: ABORTED

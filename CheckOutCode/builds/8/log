@@ -1,0 +1,33 @@
+Started by user [8mha:////4HezAVdmcULURtnjrtk0kZAU5s4CGrDFvhh9XmaXzOiIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /opt/ci/workspace/CheckOutCode
+Cleaning local Directory sourcecode
+Checking out https://windows.prudhvi.com:8443/svn/webmethods at revision '2017-11-18T03:06:36.108 -0500'
+Using sole credentials prudhvi/****** in realm ‘<https://windows.prudhvi.com:8443> VisualSVN Server’
+A         CITest
+AU        CITest/.project
+A         CITest/code
+A         CITest/code/classes
+A         CITest/code/jars
+A         CITest/code/source
+A         CITest/config
+A         CITest/doc
+A         CITest/lib
+A         CITest/manifest.v3
+A         CITest/ns
+A         CITest/ns/CITest
+A         CITest/ns/CITest/node.idf
+A         CITest/ns/CITest/svcs
+A         CITest/ns/CITest/svcs/addInts
+AU        CITest/ns/CITest/svcs/addInts/flow.xml
+A         CITest/ns/CITest/svcs/addInts/flow.xml.bak
+A         CITest/ns/CITest/svcs/addInts/node.ndf
+A         CITest/ns/CITest/svcs/node.idf
+A         CITest/pub
+AU        CITest/pub/index.html
+A         CITest/resources
+A         CITest/templates
+A         CITest/web
+At revision 2
+
+WARNING: clock of the subversion server appears to be out of sync. This can result in inconsistent check out behavior.
+Finished: SUCCESS

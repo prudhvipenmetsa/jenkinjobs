@@ -1,0 +1,78 @@
+Started by user unknown or anonymous
+Building in workspace /opt/ci/workspace/ISBuild_And_Deploy_Good
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/prudhvipenmetsa/WmPackages.git # timeout=10
+Fetching upstream changes from https://github.com/prudhvipenmetsa/WmPackages.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/prudhvipenmetsa/WmPackages.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7063cbbda26e3a27272c2a51cd41b8648e2c465b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7063cbbda26e3a27272c2a51cd41b8648e2c465b
+Commit message: "added testsuites"
+ > git rev-list --no-walk 7063cbbda26e3a27272c2a51cd41b8648e2c465b # timeout=10
+[is_build] $ /opt/api102/common/lib/ant/bin/ant -file build.xml -Dbuild.source.dir=/opt/ci/workspace/ISBuild_And_Deploy_Good -Dbuild.output.dir=/opt/ci/workspace/builds/isbuild
+Buildfile: /opt/api102/common/AssetBuildEnvironment/is_build/build.xml
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcheck-build.prop-loc:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minitLog:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+     [echo] Apache Ant(TM) version 1.10.1 compiled on February 2 2017
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateNewBuildNumber:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateBuildNumber:
+[propertyfile] Updating property file: /opt/api102/common/AssetBuildEnvironment/is_build/build.number
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateOutputDir:
+     [echo] The directory /opt/ci/workspace/builds/isbuild already exists.
+     [echo] Started Integration Server Build.............
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuildIS:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mvalidate:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0miterate_multi_project_folders:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild_projects:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mgenerate-composites:
+     [java] [7/31/18 2:35 PM][MESSAGE] ispackage.ispackage: Starting to read packages .git,APIGatwayDemo. 
+     [java] [7/31/18 2:35 PM][MESSAGE] ispackage.ispackage: Starting to read package [.git]. 
+     [java] [7/31/18 2:35 PM][MESSAGE] ispackage.ispackage: [.git] is not an Integration Server package. 
+     [java] [7/31/18 2:35 PM][MESSAGE] ispackage.ispackage: Starting to read package [APIGatwayDemo]. 
+     [java] [7/31/18 2:35 PM][WARNING] ispackage.APIGatwayDemo: Configuration data is missing. Cannot export ACL information for package APIGatwayDemo 
+     [java] [7/31/18 2:35 PM][ERROR] ispackage.APIGatwayDemo: Error occurred while exporting APIGatwayDemo: com.wm.app.b2b.server.deployer.DeployerException: java.io.FileNotFoundException: /opt/ci/workspace/builds/isbuild/IS/APIGatwayDemo.zip (Permission denied) com.wm.app.b2b.server.deployer.DeployerException: java.io.FileNotFoundException: /opt/ci/workspace/builds/isbuild/IS/APIGatwayDemo.zip (Permission denied)
+     [java] 	at com.wm.app.b2b.server.deployer.repository.FileDeploymentRepositoryWriter.write(FileDeploymentRepositoryWriter.java:71)
+     [java] 	at com.wm.app.b2b.server.deployer.repository.FileDeploymentRepositoryWriter.write(FileDeploymentRepositoryWriter.java:121)
+     [java] 	at com.wm.app.b2b.server.deployer.SolutionAssembler.exportDesignTimeAssets(SolutionAssembler.java:179)
+     [java] 	at com.wm.app.b2b.server.deployer.SolutionAssembler.export(SolutionAssembler.java:304)
+     [java] 	at com.wm.app.b2b.server.deployer.SolutionAssembler.main(SolutionAssembler.java:410)
+     [java] Caused by: java.io.FileNotFoundException: /opt/ci/workspace/builds/isbuild/IS/APIGatwayDemo.zip (Permission denied)
+     [java] 	at java.io.FileOutputStream.open0(Native Method)
+     [java] 	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+     [java] 	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+     [java] 	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+     [java] 	at com.wm.app.b2b.server.deployer.repository.FileDeploymentRepositoryWriter.write(FileDeploymentRepositoryWriter.java:67)
+     [java] 	... 4 more
+     [java] 
+     [java] [7/31/18 2:35 PM][MESSAGE] ispackage.ispackage: Completed all packages. 
+
+[8mha:////4AhgD9qzO+GVBzK268fOKNBPEI0C+34QDJth1BkDbNFjAAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+/opt/api102/common/AssetBuildEnvironment/is_build/build.xml:287: The following error occurred while executing this line:
+/opt/api102/common/AssetBuildEnvironment/is_build/build.xml:99: The following error occurred while executing this line:
+/opt/api102/common/AssetBuildEnvironment/IS/build.xml:112: The following error occurred while executing this line:
+/opt/api102/common/AssetBuildEnvironment/IS/build.xml:140: The following error occurred while executing this line:
+/opt/api102/common/AssetBuildEnvironment/IS/build.xml:165: The following error occurred while executing this line:
+/opt/api102/common/AssetBuildEnvironment/IS/build.xml:185: Java returned: 1
+
+Total time: 35 seconds
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE

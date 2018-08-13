@@ -1,0 +1,15 @@
+Started by user unknown or anonymous
+Building in workspace /opt/ci/workspace/BuildAPIGWAssets
+[BuildAPIGWAssets] $ /bin/sh -xe /tmp/jenkins4990446613253152429.sh
++ /opt/api102/common/AssetBuildEnvironment/apigw_build/build.sh
+Buildfile: /opt/api102/common/AssetBuildEnvironment/apigw_build/build.xml
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcheck-build.prop-loc:
+[native2ascii] Converting 1 file from /opt/api102/common/AssetBuildEnvironment/apigw_build to /opt/api102/common/AssetBuildEnvironment/apigw_build
+
+[8mha:////4AhgD9qzO+GVBzK268fOKNBPEI0C+34QDJth1BkDbNFjAAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+/opt/api102/common/AssetBuildEnvironment/apigw_build/build.xml:22: Exception trying to translate data
+
+Total time: 0 seconds
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

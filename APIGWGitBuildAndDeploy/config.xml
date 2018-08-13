@@ -1,0 +1,51 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.gitbucket.GitBucketProjectProperty plugin="gitbucket@0.8">
+      <linkEnabled>false</linkEnabled>
+    </org.jenkinsci.plugins.gitbucket.GitBucketProjectProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/prudhvipenmetsa/apigwmath2demo.git</url>
+        <credentialsId>f148d45e-6ff6-4fe4-a1c7-b249ae339854</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Ant plugin="ant@1.8">
+      <targets></targets>
+      <antName>ANT1.8.2</antName>
+      <buildFile>/opt/api102/common/AssetBuildEnvironment/apigw_fromrepo/build.xml</buildFile>
+      <properties>apigateway.is.url=http://webm101.prudhvi.com:9955
+apigateway.is.username=Administrator
+apigateway.is.password=manage
+apigateway.repo.localRepo.path=$workspace
+build.output.dir=/opt/ci/workspace/APIGWFFRepo3</properties>
+    </hudson.tasks.Ant>
+    <hudson.tasks.Shell>
+      <command>/opt/api102/IntegrationServer/instances/default/packages/WmDeployer/bin/Deployer.sh --deploy -dc QADeployment -project Math2DemoToQA -host webm101.prudhvi.com -port 9955 -user Administrator -pwd manage</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

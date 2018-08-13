@@ -1,0 +1,127 @@
+Started by user unknown or anonymous
+Building in workspace /opt/ci/workspace/APIGWFFBUILD
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.apigw.url https://github.com/prudhvipenmetsa/apigw.git # timeout=10
+Fetching upstream changes from https://github.com/prudhvipenmetsa/apigw.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/prudhvipenmetsa/apigw.git +refs/heads/*:refs/remotes/apigw/*
+ > git rev-parse refs/remotes/apigw/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/apigw/apigw/master^{commit} # timeout=10
+Checking out Revision 3261b5bfdff52d3fb1f5cc31251500a7cbf9f93b (refs/remotes/apigw/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3261b5bfdff52d3fb1f5cc31251500a7cbf9f93b
+Commit message: "Merge branch 'master' of https://github.com/prudhvipenmetsa/apigw"
+ > git rev-list --no-walk 3261b5bfdff52d3fb1f5cc31251500a7cbf9f93b # timeout=10
+[apigw_ff_build] $ /opt/api102/common/lib/ant/bin/ant -file build.xml -Dapigateway.buildLocalRepoOnly=true -Dbuild.output.dir=/opt/ci/workspace/APIGWFFBUILD
+Buildfile: /opt/api102/common/AssetBuildEnvironment/apigw_ff_build/build.xml
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcheck-build.prop-loc:
+[native2ascii] Converting 1 file from /opt/api102/common/AssetBuildEnvironment/apigw_ff_build to /opt/api102/common/AssetBuildEnvironment/apigw_ff_build
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minitLog:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+     [echo] Apache Ant(TM) version 1.10.1 compiled on February 2 2017
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateNewBuildNumber:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateBuildNumber:
+[propertyfile] Updating property file: /opt/api102/common/AssetBuildEnvironment/apigw_ff_build/build.number
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateOutputDir:
+     [echo] The directory /opt/ci/workspace/APIGWFFBUILD already exists.
+     [echo] Started APIGateway Build.............
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuildAPIGateway:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mvalidateParameters:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateLocalRepository:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mdownloadFromSourceAPIGateway:
+     [java] Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=128M; support was removed in 8.0
+     [echo] APIGateway Build complete...............
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcheck-build.prop-loc:
+
+[8mha:////4KQC9MS3jgu2ZzD18yWtDLVjtX2Lw7F/fypFkfhh4WdBAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcreateIndex:
+[createIndex] RepoIndexer is processing composite Assets for API Gateway from composite file /opt/ci/workspace/APIGWFFBUILD/APIGatewayAssets.acdl
+[createIndex] java.io.FileNotFoundException: /opt/ci/workspace/APIGWFFBUILD/.git/_assets.obj (Permission denied)
+[createIndex] 	at java.io.FileOutputStream.open0(Native Method)
+[createIndex] 	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+[createIndex] 	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+[createIndex] 	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+[createIndex] 	at com.sag.acdl.index.RepoIndexer.writeObjectListToFile(RepoIndexer.java:207)
+[createIndex] 	at com.sag.acdl.index.RepoIndexer.createObjectListOnRepo(RepoIndexer.java:131)
+[createIndex] 	at com.sag.acdl.index.RepoIndexer.<init>(RepoIndexer.java:33)
+[createIndex] 	at com.sag.acdl.index.RepoIndexerTask.execute(RepoIndexerTask.java:45)
+[createIndex] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:293)
+[createIndex] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+[createIndex] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[createIndex] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[createIndex] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+[createIndex] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+[createIndex] 	at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+[createIndex] 	at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:217)
+[createIndex] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[createIndex] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[createIndex] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[createIndex] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[createIndex] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+[createIndex] 	at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:155)
+[createIndex] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:293)
+[createIndex] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+[createIndex] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[createIndex] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[createIndex] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+[createIndex] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+[createIndex] 	at org.apache.tools.ant.Target.execute(Target.java:435)
+[createIndex] 	at org.apache.tools.ant.Target.performTasks(Target.java:456)
+[createIndex] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1405)
+[createIndex] 	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:38)
+[createIndex] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1260)
+[createIndex] 	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:441)
+[createIndex] 	at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105)
+[createIndex] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:293)
+[createIndex] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+[createIndex] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[createIndex] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[createIndex] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+[createIndex] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+[createIndex] 	at org.apache.tools.ant.taskdefs.Sequential.execute(Sequential.java:68)
+[createIndex] 	at net.sf.antcontrib.logic.IfTask.execute(IfTask.java:197)
+[createIndex] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[createIndex] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[createIndex] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[createIndex] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[createIndex] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+[createIndex] 	at org.apache.tools.ant.TaskAdapter.execute(TaskAdapter.java:155)
+[createIndex] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:293)
+[createIndex] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[createIndex] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[createIndex] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[createIndex] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[createIndex] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+[createIndex] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+[createIndex] 	at org.apache.tools.ant.Target.execute(Target.java:435)
+[createIndex] 	at org.apache.tools.ant.Target.performTasks(Target.java:456)
+[createIndex] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1405)
+[createIndex] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1376)
+[createIndex] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+[createIndex] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1260)
+[createIndex] 	at org.apache.tools.ant.Main.runBuild(Main.java:857)
+[createIndex] 	at org.apache.tools.ant.Main.startAnt(Main.java:236)
+[createIndex] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:287)
+[createIndex] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:113)
+
+[8mha:////4AhgD9qzO+GVBzK268fOKNBPEI0C+34QDJth1BkDbNFjAAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+/opt/api102/common/AssetBuildEnvironment/apigw_ff_build/build.xml:393: The following error occurred while executing this line:
+/opt/api102/common/AssetBuildEnvironment/apigw_ff_build/build.xml:180: /opt/ci/workspace/APIGWFFBUILD/.git/_assets.obj (Permission denied)
+
+Total time: 3 seconds
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE
